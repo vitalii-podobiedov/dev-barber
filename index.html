@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header class="container">
         <nav class="navbar">
             <div class="container-fluid">
               <a class="navbar-brand" href="index.html">
@@ -45,13 +45,14 @@
             </div>
         </nav>   
     </header>
-    <main>
+    <main class="container">
         <section class="first-screen" id="first-screen">
             <h1 class="template-title"> <span>Hairstyle</span> Reflects The Personality Inside You</h1>
             <h4 class="template-subtitle">It is a long established fact that a reader will be distracted by the readable content of a page when looking at.</h4>
             <button class="btn btn-fs" type="button">Get started</button>
         </section>
-        <section class="history" id="history">
+        <section class="history decoration-1" id="history">
+			<img class="history-img" src="assets/img/history-bg.png" alt="img">
             <div class="content-box">
                 <h2 class="template-title">Our <span>History</span></h2>
                 <p class="template-subtitle">It is a long established fact that a reader will be distracted by the readable content of a page when looking at.</p>
@@ -59,7 +60,7 @@
                 <button class="btn btn-fs" type="button">Learn more</button>
             </div>
         </section>
-        <section class="services" id="services">
+        <section class="services decoration-2" id="services">
 			<h2 class="template-title">Services We <span>Provide</span></h2>
 			<div class="wrapper-sliders">
 				<div class="card card-1">
@@ -108,23 +109,23 @@
 					<div class="image-item"><img src="assets/img/gallery-item-5.png" alt="Image 6"></div>
 				</div>
 				<button class="btn btn-gallary" type="button">View All</button>
-
 		</section>
     </main>
-    <footer class="footer">
-		<img src="assets/img/logo.svg" alt="logo">
-		<p>It is a long established fact that a reader will be distracted by the readable </p>
+    <footer class="footer container decoration-3">
+		<img class="logo-footer" src="assets/img/logo.svg" alt="logo">
+		<p class="footer-text-desqription">It is a long established fact that a reader will be distracted by the readable </p>
 		<div class="link-social">
 			<a href="#">
-				<img src="assets/img/icon-fb.png" alt="fb">
+				<img class="link-icon" src="assets/img/icon-fb.png" alt="fb">
 			</a>
 			<a href="#">
-				<img src="assets/img/icon-g+.png" alt="g+">
+				<img class="link-icon" src="assets/img/icon-g+.png" alt="g+">
 			</a>
 			<a href="#">
-				<img src="assets/img/icon-x.png" alt="x">
+				<img class="link-icon" src="assets/img/icon-x.png" alt="x">
 			</a>
 		</div>
+		<div class="decoration-line"></div>
     </footer>
 </body>
 </html>
