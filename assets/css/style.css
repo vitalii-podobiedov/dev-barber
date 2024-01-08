@@ -31,7 +31,7 @@
 
 .navbar-nav {
     display: flex;
-    gap: 48px;
+    gap: 20px;
     align-items: end;
 }
 
@@ -40,19 +40,28 @@
     gap 78px;
     margin-left: auto;
     margin-left: 400px;
-
 }
 
 nav li {
     list-style-type: none;
 }
 
-.nav-link.active {
-    border-radius: 5px;
-    background: #A3C1EF;
-    padding: 97px 14px 8px;
-	color: #fff;
+.nav-link {
+	padding: 97px 14px 8px;
 }
+
+.nav-link:hover {
+	animation: borderAnimation 0.5s forwards;
+  }
+
+  @keyframes borderAnimation {
+	to {
+	  border-radius: 5px;
+	  background: #A3C1EF;
+
+	  color: #fff;
+	}
+  }
 
 a {
     text-decoration: none;
@@ -72,6 +81,8 @@ button:hover {
     background-color: #A3C1EF;
 }
 
+
+
 .btn {
     padding: 23px 33px;
     border-radius: 20px;
@@ -84,6 +95,7 @@ button:hover {
     font-weight: 700;
     line-height: 150.6%; /* 30.12px */
     letter-spacing: 0.6px;
+	cursor: pointer;
 }
 
 /* section first-screen */
@@ -123,6 +135,7 @@ button:hover {
 	margin-bottom: 97px;
 	width: 530px;
 }
+
 /* history */
 
 .decoration-1::before {
@@ -137,6 +150,7 @@ button:hover {
 }
   
   /* Декорация справа вверху */
+
 .decoration-1::after {
 	content: '';
 	position: absolute;
@@ -144,7 +158,6 @@ button:hover {
 	right: 0;
 	width: 100%;
 	height: 100%;
-	/* background-color: #ffcc00; */
 	background: url(../img/decoration-1-right.png) no-repeat right;
 	z-index: 1;
 }
@@ -179,6 +192,7 @@ button:hover {
 }
 
 /* section Services */
+
 .services {
 	position: relative;
 }
@@ -186,23 +200,44 @@ button:hover {
 .decoration-2::before {
 	content: '';
 	position: absolute;
-	bottom: -780px;
+	bottom: -400px;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: url(../img/decoration-2-left.png) no-repeat left;
+	background: url(../img/decoration-left.png) no-repeat left;
 	z-index: 1;
 }
 
 .decoration-2::after {
 	content: '';
 	position: absolute;
-	bottom: -780px;
+	bottom: -400px;
 	right: 0;
 	width: 100%;
 	height: 100%;
+	background: url(../img/decoration-right.png) no-repeat right;
+	z-index: 1;
+}
 
-	background: url(../img/decoration-2-right.png) no-repeat right;
+.decoration-3::before {
+	content: '';
+	position: absolute;
+	top: -400px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../img/decoration-left-3.png) no-repeat left;
+	z-index: 1;
+}
+
+.decoration-3::after {
+	content: '';
+	position: absolute;
+	top: -400px;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../img/decoration-right-3.png) no-repeat right;
 	z-index: 1;
 }
 
@@ -223,13 +258,19 @@ button:hover {
 }
 
 .card:hover {
-	background: #99BAED;
-	box-shadow: none;
-	color: #fff;
-}
+	animation: cardAnimation 0.3s forwards;
+  }
+
+  @keyframes cardAnimation {
+	to {
+		background: #99BAED;
+		box-shadow: none;
+		color: #fff;
+		cursor: pointer;
+	}
+  }
 
 .card .card-title {
-	
 	font-family: Catamaran;
 	font-size: 45px;
 	font-weight: 700;
@@ -265,7 +306,6 @@ button:hover {
 }
 
 .img-card {
-    
 	height: 66px;
 	width: auto;
 }
@@ -291,6 +331,7 @@ button:hover {
 	align-items: center;
 	text-align: center;
 	margin-bottom: 186px;
+	position: relative;
 }
 
 .image-item {
@@ -321,8 +362,7 @@ button:hover {
 
 /* footer */
 
-
-.decoration-3::before {
+.decoration-4::before {
 	content: '';
 	position: absolute;
 	bottom: 0;
@@ -333,16 +373,19 @@ button:hover {
 	z-index: 1;
 }
 
-.decoration-3::after {
+.decoration-4::after {
 	content: '';
 	position: absolute;
 	bottom: 0;
 	right: 0;
 	width: 100%;
 	height: 100%;
-
 	background: url(../img/decoration-3-right.png) no-repeat right;
 	z-index: 1;
+}
+
+.logo-footer, .footer-text-desqription, .link-social, .wrapper-sliders, .image-grid, .history .content-box {
+	z-index: 999;
 }
 
 .footer {
@@ -370,12 +413,12 @@ button:hover {
 	border: none;
 	border-radius: 50px;
 	background-color: #D3E5FF;
-	
 	width: 67px;
 	height: 67px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	cursor: pointer;
 }
 
 .link-social a:hover {
